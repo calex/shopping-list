@@ -20,7 +20,7 @@ function shoppingListControls() {
     }); 
 
     $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
-        $(this).closest('li').remove();
+        this.closest('li').remove();
     }); 
 
     $('.shopping-list').on('click', '.shopping-item-toggle', event => {
